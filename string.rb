@@ -48,10 +48,17 @@
 # 6
 # Write a program that asks the user to enter a name. If the name is not "Santa", print "You're not Santa."
 
-puts "Please enter a name:"
-user_input = gets.chomp.downcase
-if user_input != 'santa'
-  puts "You're not Santa."
-elsif user_input == 'santa'
-  puts "Santa!!!! I want a pony!"
-end
+# puts "Please enter a name:"
+# user_input = gets.chomp.downcase
+# if user_input != 'santa'
+#   puts "You're not Santa."
+# elsif user_input == 'santa'
+#   puts "Santa!!!! I want a pony!"
+# end
+
+# 7 
+# Write a program that uses variables to store a book's title and author, then prints out a sentence using that information with string concatenation (the + operator).
+
+book_title = "Red Rising"
+author = "Pierce Brown"
+puts book_title + " is a 2014 science fiction dystopian novel by American author " + author + ", and the first book and eponym of a series. The novel, set on a future planet Mars, follows lowborn miner Darrow as he infiltrates the ranks of the elite Golds."
