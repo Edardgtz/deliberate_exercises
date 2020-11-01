@@ -40,7 +40,18 @@
 # 5
 # Write a program that uses variables to store three different colors, then prints out a sentence using the colors with string interpolation (the #{} operator).
 
-x = "red"
-y = "green"
-z = "yellow"
-puts "I saw a #{x} bird on a #{y} car with #{z} rims."
+# x = "red"
+# y = "green"
+# z = "yellow"
+# puts "I saw a #{x} bird on a #{y} car with #{z} rims."
+
+# 6
+# Write a program that asks the user to enter a name. If the name is not "Santa", print "You're not Santa."
+
+puts "Please enter a name:"
+user_input = gets.chomp.downcase
+if user_input != 'santa'
+  puts "You're not Santa."
+elsif user_input == 'santa'
+  puts "Santa!!!! I want a pony!"
+end
