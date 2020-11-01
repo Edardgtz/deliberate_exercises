@@ -66,6 +66,23 @@
 # 8
 # Write a program that uses variables to store a book's title and author, then prints out a sentence using that information with string interpolation (the #{} operator).
 
-book_title = "Red Rising"
-author = "Pierce Brown"
-puts "#{book_title} is a 2014 science fiction dystopian novel by American author #{author}, and the first book and eponym of a series. The novel, set on a future planet Mars, follows lowborn miner Darrow as he infiltrates the ranks of the elite Golds."
+# book_title = "Red Rising"
+# author = "Pierce Brown"
+# puts "#{book_title} is a 2014 science fiction dystopian novel by American author #{author}, and the first book and eponym of a series. The novel, set on a future planet Mars, follows lowborn miner Darrow as he infiltrates the ranks of the elite Golds."
+
+# 9 
+# Write a program that asks the user to enter a password. If the password is "Joshua", the program responds "Shall we play a game?". For any other password, the program responds "Access denied"
+
+puts "Enter a password:"
+x = true
+while x
+  user_input = gets.chomp
+  x = false
+  if user_input == "Joshua"
+    puts "Shall we play a game?"
+    x = false
+  else 
+    puts "Access denied"
+    x = true
+  end
+end
