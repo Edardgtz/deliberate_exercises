@@ -59,6 +59,13 @@
 # 7 
 # Write a program that uses variables to store a book's title and author, then prints out a sentence using that information with string concatenation (the + operator).
 
+# book_title = "Red Rising"
+# author = "Pierce Brown"
+# puts book_title + " is a 2014 science fiction dystopian novel by American author " + author + ", and the first book and eponym of a series. The novel, set on a future planet Mars, follows lowborn miner Darrow as he infiltrates the ranks of the elite Golds."
+
+# 8
+# Write a program that uses variables to store a book's title and author, then prints out a sentence using that information with string interpolation (the #{} operator).
+
 book_title = "Red Rising"
 author = "Pierce Brown"
-puts book_title + " is a 2014 science fiction dystopian novel by American author " + author + ", and the first book and eponym of a series. The novel, set on a future planet Mars, follows lowborn miner Darrow as he infiltrates the ranks of the elite Golds."
+puts "#{book_title} is a 2014 science fiction dystopian novel by American author #{author}, and the first book and eponym of a series. The novel, set on a future planet Mars, follows lowborn miner Darrow as he infiltrates the ranks of the elite Golds."
