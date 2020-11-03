@@ -73,16 +73,24 @@
 # 9 
 # Write a program that asks the user to enter a password. If the password is "Joshua", the program responds "Shall we play a game?". For any other password, the program responds "Access denied"
 
-puts "Enter a password:"
-x = true
-while x
-  user_input = gets.chomp
-  x = false
-  if user_input == "Joshua"
-    puts "Shall we play a game?"
-    x = false
-  else 
-    puts "Access denied"
-    x = true
-  end
-end
+# puts "Enter a password:"
+# x = true
+# while x
+#   user_input = gets.chomp
+#   x = false
+#   if user_input == "Joshua"
+#     puts "Shall we play a game?"
+#     x = false
+#   else 
+#     puts "Access denied"
+#     x = true
+#   end
+# end
+
+# 10
+# Write a program that uses variables to store the names of three cities, then prints out a sentence using that information with string concatenation (the + operator).
+
+city_1 = "Chicago"
+city_2 = "New York"
+city_3 = "Los Angeles"
+
