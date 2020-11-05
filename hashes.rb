@@ -23,6 +23,13 @@
 # puts book[:language]
 
 # 5. Make an array of hashes to store the title and author for 3 different books. Then print out the third book's author.
-books = [{title: "Sapiens: A Brief History of Humankind", author: "Yuval Noah Harari"}, {title: "A Short History of Nearly Everything", author: "Bill Bryson"}, {title: "The Magicians", author: "Lev Grossman"}]
+# books = [{title: "Title: Sapiens: A Brief History of Humankind", author: "Author: Yuval Noah Harari"}, {title: "Title: A Short History of Nearly Everything", author: "Author: Bill Bryson"}, {title: "Title: The Magicians", author: "Author: Lev Grossman"}]
 
-puts books[2][:author]
+# puts books[2][:author]
+
+# 6. Make a hash to store 3 different states and their captitals. Then add a new state and capital and print the hash to see the result.
+states = {illinois: "Springfield", california: "Sacramento", texas: "Austin"}
+
+states[:michigan] = "Lansing"
+
+p states
