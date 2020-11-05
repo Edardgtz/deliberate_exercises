@@ -14,12 +14,15 @@
 # p menu
 
 # 4. Make a hash to store a book's title, author, number of pages, and language. Then print each attribute on separate lines.
-book = {title: "Title: Sapiens: A Brief History of Humankind", author: "Author: Yuval Noah Harari", pages: "Pages: 443", language: "Language: Hebrew, English"
-}
+# book = {title: "Title: Sapiens: A Brief History of Humankind", author: "Author: Yuval Noah Harari", pages: "Pages: 443", language: "Language: Hebrew, English"
+# }
 
-puts book[:title]
-puts book[:author]
-puts book[:pages]
-puts book[:language]
+# puts book[:title]
+# puts book[:author]
+# puts book[:pages]
+# puts book[:language]
 
+# 5. Make an array of hashes to store the title and author for 3 different books. Then print out the third book's author.
+books = [{title: "Sapiens: A Brief History of Humankind", author: "Yuval Noah Harari"}, {title: "A Short History of Nearly Everything", author: "Bill Bryson"}, {title: "The Magicians", author: "Lev Grossman"}]
 
+puts books[2][:author]
