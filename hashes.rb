@@ -45,6 +45,12 @@
 # puts laptops[1][:model]
 
 # 9. Make a hash to store definitions for 2 different words. Then add a new word and definition and print the hash to see the result.
-word_def = {indomitable: "impossible to subdue or defeat.", suffuse: "impossible to subdue or defeat."}
-word_def[:crepuscular] = "of, resembling, or relating to twilight."
-p word_def
+# word_def = {indomitable: "impossible to subdue or defeat.", suffuse: "impossible to subdue or defeat."}
+# word_def[:crepuscular] = "of, resembling, or relating to twilight."
+# p word_def
+
+# 10. Make a hash to store a shirt's brand, color, and size. Then print each attribute on separate lines.
+shirt = {brand: "Levis", color: "Black", size: "Medium"}
+puts shirt[:brand]
+puts shirt[:color]
+puts shirt[:size]
