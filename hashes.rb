@@ -41,5 +41,10 @@
 # puts laptop[:year]
 
 # 8. Make an array of hashes to store the brand and model for 3 different laptops. Then print out the second laptop's model.
-laptops = [{brand: "Apple", model: "Macbook Pro"}, {brand: "Microsoft", model: "Surface Pro"}, {brand: "Alienware", model: "area-51M R2"}]
-puts laptops[1][:model]
+# laptops = [{brand: "Apple", model: "Macbook Pro"}, {brand: "Microsoft", model: "Surface Pro"}, {brand: "Alienware", model: "area-51M R2"}]
+# puts laptops[1][:model]
+
+# 9. Make a hash to store definitions for 2 different words. Then add a new word and definition and print the hash to see the result.
+word_def = {indomitable: "impossible to subdue or defeat.", suffuse: "impossible to subdue or defeat."}
+word_def[:crepuscular] = "of, resembling, or relating to twilight."
+p word_def
