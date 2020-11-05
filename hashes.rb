@@ -28,8 +28,14 @@
 # puts books[2][:author]
 
 # 6. Make a hash to store 3 different states and their captitals. Then add a new state and capital and print the hash to see the result.
-states = {illinois: "Springfield", california: "Sacramento", texas: "Austin"}
+# states = {illinois: "Springfield", california: "Sacramento", texas: "Austin"}
 
-states[:michigan] = "Lansing"
+# states[:michigan] = "Lansing"
 
-p states
+# p states
+
+# 7. Make a hash to store a laptop's brand, model, and year. Then print each attribute on separate lines.
+laptop = {brand: "Apple", model: "Macbook Pro", year: "2020"}
+puts laptop[:brand]
+puts laptop[:model]
+puts laptop[:year]
