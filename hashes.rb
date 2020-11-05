@@ -9,6 +9,17 @@
 # puts people[0]
 
 # 3. Make a hash to store prices for 3 different menu items. Then add a new menu item and price and print the hash to see the result.
-menu = {hambuger: "7.99", fries: "2.49", milkshake: "3.49"}
-menu[:onion_rings] = "2.99"
-p menu
+# menu = {hambuger: "7.99", fries: "2.49", milkshake: "3.49"}
+# menu[:onion_rings] = "2.99"
+# p menu
+
+# 4. Make a hash to store a book's title, author, number of pages, and language. Then print each attribute on separate lines.
+book = {title: "Title: Sapiens: A Brief History of Humankind", author: "Author: Yuval Noah Harari", pages: "Pages: 443", language: "Language: Hebrew, English"
+}
+
+puts book[:title]
+puts book[:author]
+puts book[:pages]
+puts book[:language]
+
+
