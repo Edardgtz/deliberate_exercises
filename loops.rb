@@ -6,8 +6,21 @@
 # end
 
 # 2. Write a while loop that prints the word "hello" 5 times.
-i = 0
-while i <= 4
-  p "hello"
-  i += 1
+# i = 0
+# while i <= 4
+#   p "hello"
+#   i += 1
+# end
+
+# 3. Write a while loop that asks the user to enter a word and will run forever until the user enters the word "stop".
+x = true
+while x
+  puts "Enter a word: "
+  user_input = gets.chomp.downcase
+  if user_input == 'stop'
+    puts "OK! Fine I'll stop. The temper on this one."
+    x = false
+  else
+    puts "What's the magic word?"
+  end
 end
