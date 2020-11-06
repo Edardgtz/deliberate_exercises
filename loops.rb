@@ -26,8 +26,15 @@
 # end
 
 # 4. Write a while loop that prints the numbers 0 through 100, increasing by 5 each time.
-i = 0
-while i <= 100
-  p i
-  i += 5
+# i = 0
+# while i <= 100
+#   p i
+#   i += 5
+# end
+
+# 5. Write a while loop that prints the number 9000 ten times.
+i = 1
+while i <= 10
+  puts "9000"
+  i += 1
 end
