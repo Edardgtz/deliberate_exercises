@@ -33,8 +33,29 @@
 # end
 
 # 5. Write a while loop that prints the number 9000 ten times.
-i = 1
-while i <= 10
-  puts "9000"
+# i = 1
+# while i <= 10
+#   puts "9000"
+#   i += 1
+# end
+
+# 6. Write a while loop that asks the user to enter a number and will run forever until the user enters a number greater than 10.
+
+# x = true
+# while x
+#   puts "Enter a number:"
+#   user_input = gets.chomp.to_i
+#   if user_input > 10
+#     puts "OK, we're done here."
+#     x = false
+#   else
+#     puts "Nice number how about another?"
+#   end
+# end
+
+# 7. Write a while loop that prints the numbers 50 to 70.
+i = 50
+while i <= 70
+  p i
   i += 1
 end
