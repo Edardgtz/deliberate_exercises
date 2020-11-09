@@ -35,11 +35,22 @@
 
 #  4. Start with an array of numbers and create a new array with only the even numbers.
 #     For example, [2, 4, 5, 1, 8, 9, 7] becomes [2, 4, 8].
-numbers = [2, 4, 5, 1, 8, 9, 7]
-even_numbers = []
-numbers.each do |number|
-  if number %  2 == 0
-    even_numbers << number
+# numbers = [2, 4, 5, 1, 8, 9, 7]
+# even_numbers = []
+# numbers.each do |number|
+#   if number %  2 == 0
+#     even_numbers << number
+#   end
+# end
+# p even_numbers
+
+#  5. Start with an array of strings and create a new array with only the strings shorter than 4 letters.
+#     For example, ["a", "man", "a", "plan", "a", "canal", "panama"] becomes ["a", "man", "a", "a"].
+strings = ["a", "man", "a", "plan", "a", "canal", "panama"]
+short_strings = []
+strings.each do |string|
+  if string.length < 4
+    short_strings << string
   end
 end
-p even_numbers
+p short_strings
