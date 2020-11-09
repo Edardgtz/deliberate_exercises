@@ -23,12 +23,23 @@
 
 #  3. Start with an array of hashes and create a new array with only the hashes with prices greater than 5 (from the :price key).
 #     For example, [{name: "chair", price: 100}, {name: "pencil", price: 1}, {name: "book", price: 4}] becomes [{name: "chair", price: 100}].
-items = [{name: "chair", price: 100}, {name: "pencil", price: 1}, {name: "book", price: 4}]
-items_over_five = []
-items.each do |item|
-  if item[:price] > 5
-    items_over_five << item
+# items = [{name: "chair", price: 100}, {name: "pencil", price: 1}, {name: "book", price: 4}]
+# items_over_five = []
+# items.each do |item|
+#   if item[:price] > 5
+#     items_over_five << item
+#   end
+# end
+
+# p items_over_five
+
+#  4. Start with an array of numbers and create a new array with only the even numbers.
+#     For example, [2, 4, 5, 1, 8, 9, 7] becomes [2, 4, 8].
+numbers = [2, 4, 5, 1, 8, 9, 7]
+even_numbers = []
+numbers.each do |number|
+  if number %  2 == 0
+    even_numbers << number
   end
 end
-
-p items_over_five
+p even_numbers
