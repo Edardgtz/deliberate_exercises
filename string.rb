@@ -90,7 +90,22 @@
 # 10
 # Write a program that uses variables to store the names of three cities, then prints out a sentence using that information with string concatenation (the + operator).
 
-city_1 = "Chicago"
-city_2 = "New York"
-city_3 = "Los Angeles"
+# city_1 = "Chicago"
+# city_2 = "New York"
+# city_3 = "Los Angeles"
+def shortest_string(strings)
+  min = strings[0].length
+  strings.each do |string|
+    if string.length < min
+      min = string.length
+    end
+    if string.length == min
+      @word = string
+    end
+  end
+  puts @word
+end
+
+shortest_string(['hey', 'hello', 'goodbye', 'hola', 'rhinocerous'])
+ 
 
