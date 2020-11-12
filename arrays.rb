@@ -68,11 +68,22 @@
 
 #  7. Start with an array of numbers and create a new array with only the numbers less than 10.
 #     For example, [8, 23, 0, 44, 1980, 3] becomes [8, 0, 3].
-numbers = [8, 23, 0, 44, 1980, 3]
-under_ten = []
-numbers.each do |number|
-  if number < 10
-    under_ten << number
+# numbers = [8, 23, 0, 44, 1980, 3]
+# under_ten = []
+# numbers.each do |number|
+#   if number < 10
+#     under_ten << number
+#   end
+# end
+# p under_ten
+
+#  8. Start with an array of strings and create a new array with only the strings that don't start with the letter "b".
+#     For example, ["big", "little", "good", "bad"] becomes ["little", "good"].
+strings = ["big", "little", "good", "bad"]
+no_b_strings = []
+strings.each do |string|
+  if string[0].downcase != 'b'
+    no_b_strings << string    
   end
 end
-p under_ten
+p no_b_strings
