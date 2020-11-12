@@ -57,11 +57,22 @@
 
 #  6. Start with an array of hashes and create a new array with only the hashes with names shorter than 6 letters (from the :name key).
 #     For example, [{name: "chair", price: 100}, {name: "pencil", price: 1}, {name: "book", price: 4}] becomes [{name: "chair", price: 100}, {name: "book", price: 4}].
-products = [{name: "chair", price: 100}, {name: "pencil", price: 1}, {name: "book", price: 4}]
-under_six_letters = []
-products.each do |product|
-  if product[:name].length < 6
-    under_six_letters << product
+# products = [{name: "chair", price: 100}, {name: "pencil", price: 1}, {name: "book", price: 4}]
+# under_six_letters = []
+# products.each do |product|
+#   if product[:name].length < 6
+#     under_six_letters << product
+#   end
+# end
+# p under_six_letters
+
+#  7. Start with an array of numbers and create a new array with only the numbers less than 10.
+#     For example, [8, 23, 0, 44, 1980, 3] becomes [8, 0, 3].
+numbers = [8, 23, 0, 44, 1980, 3]
+under_ten = []
+numbers.each do |number|
+  if number < 10
+    under_ten << number
   end
 end
-p under_six_letters
+p under_ten
