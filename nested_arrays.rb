@@ -28,15 +28,34 @@
 #  3. Use a nested loop with one array of strings to create a new array that contains every combination of each string with every other string in the array.
 #     For example, ["a", "b", "c", "d"] becomes ["ab", "ac", "ad", "ba", "bc", "bd", "ca", "cb", "cd", "da", "db", "dc"].
 
-letters = ["a", "b", "c", "d"]
-letter_combos = []
-letters.each do |letter_a|
-  letters.each do |letter_b|
-    if letter_a == letter_b
-    else
-      letter_combos << letter_a + letter_b 
+# letters = ["a", "b", "c", "d"]
+# letter_combos = []
+# letters.each do |letter_a|
+#   letters.each do |letter_b|
+#     if letter_a == letter_b
+#     else
+#       letter_combos << letter_a + letter_b 
+#     end
+#   end
+# end
+
+# p letter_combos
+
+#  4. Use a nested loop to find the largest product of any two different numbers within a given array.
+#     For example, [5, -2, 1, -9, -7, 2, 6] becomes 63.
+
+def find_product(user_input)
+  @user_input = user_input
+  max_product = 0
+  @user_input.each do |number_a|
+    @user_input.each do |number_b|
+      product = number_a * number_b
+      if number_a != number_b && max_product < product
+        max_product = number_a * number_b        
+      end
     end
   end
+  p max_product
 end
 
-p letter_combos
+find_product([5, -2, 1, -9, -7, 2, 6])
