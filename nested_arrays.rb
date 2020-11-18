@@ -95,11 +95,47 @@
 #  7. Use a nested loop with an array of numbers to compute an array with every combination of products from each number.
 #     For example, [2, 8, 3] becomes [4, 16, 6, 16, 64, 24, 6, 24, 9].
 
-numbers = [2, 8, 3]
-product_combinations = []
+# numbers = [2, 8, 3]
+# product_combinations = []
+# numbers.each do |number_a|
+#   numbers.each do |number_b|
+#     product_combinations << number_a * number_b
+#   end
+# end
+# p product_combinations
+
+#  8. Use a nested loop to find the largest sum of any two different numbers within an array.
+#     For example, [1, 8, 3, 10] becomes 18.
+
+# numbers = [1, 8, 3, 10]
+# largest_sum = 0
+# numbers.each do |number_a|
+#   numbers.each do |number_b|
+#     if number_a != number_b
+#       if largest_sum < number_a + number_b
+#         largest_sum = number_a + number_b
+#       end
+#     end
+#   end
+# end
+# p largest_sum
+
+#  9. Use nested loops with an array of numbers to compute a new array containing the first two numbers (from the original array) that add up to the number 10. If there are no two numbers that add up to 10, return false.
+#     For example, [2, 5, 3, 1, 0, 7, 11] becomes [3, 7].
+
+numbers = [2, 5, 3, 1, 0, 7, 11]
+sum_of_ten = []
 numbers.each do |number_a|
+  if sum_of_ten.length == 2
+    break
+  end
   numbers.each do |number_b|
-    product_combinations << number_a * number_b
+    sum = number_a + number_b
+    if number_a != number_b && sum == 10
+      sum_of_ten << number_a
+      sum_of_ten << number_b
+      break
+    end
   end
 end
-p product_combinations
+p sum_of_ten
