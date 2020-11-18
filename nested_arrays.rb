@@ -82,12 +82,24 @@
 #  6. Use a nested loop with two arrays of numbers to create a new array of the sums of each combination of numbers.
 #     For example, [1, 2] and [6, 7, 8] becomes [7, 8, 9, 8, 9, 10].
 
-numbers_one = [1, 2]
-numbers_two = [6, 7, 8]
-sum_of_arrays = []
-numbers_one.each do |number_a|
-  numbers_two.each do |number_b|
-    sum_of_arrays << number_a + number_b
+# numbers_one = [1, 2]
+# numbers_two = [6, 7, 8]
+# sum_of_arrays = []
+# numbers_one.each do |number_a|
+#   numbers_two.each do |number_b|
+#     sum_of_arrays << number_a + number_b
+#   end
+# end
+# p sum_of_arrays
+
+#  7. Use a nested loop with an array of numbers to compute an array with every combination of products from each number.
+#     For example, [2, 8, 3] becomes [4, 16, 6, 16, 64, 24, 6, 24, 9].
+
+numbers = [2, 8, 3]
+product_combinations = []
+numbers.each do |number_a|
+  numbers.each do |number_b|
+    product_combinations << number_a * number_b
   end
 end
-p sum_of_arrays
+p product_combinations
