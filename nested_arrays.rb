@@ -63,19 +63,31 @@
 #  5. Use a nested loop to compute the sum of all the numbers in an array of number pairs.
 #     For example, [[1, 3], [8, 9], [2, 16]] becomes 39.
 
-def find_sum(numbers)
-  sum = 0
-  total_sum = 0
-  numbers.each do |pair|
-    pair.each do |number|
-      if sum != number
-        sum = sum + number
-      else
+# def find_sum(numbers)
+#   sum = 0
+#   numbers.each do |pair|
+#     pair.each do |number|
+#       if sum != number
+#         sum = sum + number
+#       else
         
-      end
-    end
-  end
-  p sum
-end
+#       end
+#     end
+#   end
+#   p sum
+# end
 
-find_sum([[1, 3], [8, 9], [2, 16]])
+# find_sum([[1, 3], [8, 9], [2, 16]])
+
+#  6. Use a nested loop with two arrays of numbers to create a new array of the sums of each combination of numbers.
+#     For example, [1, 2] and [6, 7, 8] becomes [7, 8, 9, 8, 9, 10].
+
+numbers_one = [1, 2]
+numbers_two = [6, 7, 8]
+sum_of_arrays = []
+numbers_one.each do |number_a|
+  numbers_two.each do |number_b|
+    sum_of_arrays << number_a + number_b
+  end
+end
+p sum_of_arrays
