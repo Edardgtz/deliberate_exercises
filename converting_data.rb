@@ -75,7 +75,40 @@ strings.each do |string_a|
   end
 end
 
-p hash
+# p hash
 
+#  7. Convert a hash into a flat array containing all the hash’s keys and values.
+#     For example, {"a" => 1, "b" => 2, "c" => 3, "d" => 4} becomes ["a", 1, "b", 2, "c", 3, "d", 4].
 
+hash = {"a" => 1, "b" => 2, "c" => 3, "d" => 4}
+
+flat_array = hash.flatten
+# p flat_array
+
+#  8. Combine data from a hash with names and prices and an array of hashes with names, colors, and weights to make a new hash.
+#     For example, {"chair" => 75, "book" => 15} and [{name: "chair", color: "red", weight: 10}, {name: "book", color: "black", weight: 1}] becomes {"chair" => {price: 75, color: "red", weight: 10}, "book" => {price: 15, color: "black", weight: 1}}.
+
+item = {"chair" => 75, "book" => 15}
+description = [{name: "chair", color: "red", weight: 10}, {name: "book", color: "black", weight: 1}]
+
+keys = item.keys
+values = item.values
+merged_hash = {}
+i = 0
+while i < description.length
+  if i == 0
+    description[i][:price] = values[i]
+    merged_hash[keys[i]] = description[i]
+  else
+    description[i][:price] = values[i]
+    merged_hash[keys[i]] = description[i]
+  end
+  i += 1
+  merged_hash['chair'].delete(:name)
+end
+
+p merged_hash
+
+#  9. Convert an array of hashes into a hash of arrays, using the author as keys and the titles as values.
+#     For example, [{author: "Jeff Smith", title: "Bone"}, {author: "George Orwell", title: "1984"}, {author: "Jeff Smith", title: "RASL"}] becomes {"Jeff Smith" => ["Bone", "RASL"], "George Orwell" => ["1984"]}.
 
