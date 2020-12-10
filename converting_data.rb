@@ -120,10 +120,10 @@ jeff_titles = []
 goerge_titles = []
 i = 0
 while i < array_of_hashes.length
-  if i == 1
+  if i == 0
     value1 = array_of_hashes[i].values
     key = array_of_hashes[i].keys
-  elsif i == 0
+  elsif i == 1
     value2 = array_of_hashes[i].values
     value3 = array_of_hashes[i+1].values
     jeff_titles << value1[i]
@@ -134,10 +134,13 @@ while i < array_of_hashes.length
   end
   i += 1
 end
+# p author_hash
 
- 
-p author_hash
+# 10. Given a hash, create a new hash that has the keys and values switched.
+#     For example, {"a" => 1, "b" => 2, "c" => 3} becomes {1 => "a", 2 => "b", 3 => "c"}.
 
+hash = {"a" => 1, "b" => 2, "c" => 3}
+p hash.invert
 
 
 
