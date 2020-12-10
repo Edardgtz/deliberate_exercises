@@ -107,8 +107,38 @@ while i < description.length
   merged_hash['chair'].delete(:name)
 end
 
-p merged_hash
+# p merged_hash
 
 #  9. Convert an array of hashes into a hash of arrays, using the author as keys and the titles as values.
 #     For example, [{author: "Jeff Smith", title: "Bone"}, {author: "George Orwell", title: "1984"}, {author: "Jeff Smith", title: "RASL"}] becomes {"Jeff Smith" => ["Bone", "RASL"], "George Orwell" => ["1984"]}.
+
+
+array_of_hashes = [{author: "Jeff Smith", title: "Bone"}, {author: "George Orwell", title: "1984"}, {author: "Jeff Smith", title: "RASL"}]
+
+author_hash = {}
+jeff_titles = []
+goerge_titles = []
+i = 0
+while i < array_of_hashes.length
+  if i == 1
+    value1 = array_of_hashes[i].values
+    key = array_of_hashes[i].keys
+  elsif i == 0
+    value2 = array_of_hashes[i].values
+    value3 = array_of_hashes[i+1].values
+    jeff_titles << value1[i]
+    jeff_titles << value3[i]
+    goerge_titles << value2[i]
+    author_hash[value1[0]] = jeff_titles
+    author_hash[value2[0]] = goerge_titles 
+  end
+  i += 1
+end
+
+ 
+p author_hash
+
+
+
+
 
